@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Faceboo login form</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+		body{
+			background-color: whitesmoke;
+		}
+
+		.header{
+			background: steelblue;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			height: 80px;
+			z-index: 999;
+			list-style: none;
+			
+		}
+
+		.logo{
+			font-size: 30px;
+			font-family: cursive;
+			margin: 16px;
+			margin-left: 30px;
+			color: white;
+			float: left;
+		}
+
+		.login-form{
+			text-align: center;
+			justify-content: center;
+			float: right;
+			margin: 28px;
+			margin-right: 50px;
+		}
+
+		.email{
+			height: 23px;
+			border-radius: 3px;
+			border: 1px solid gray;
+			font-family: cursive;
+		}
+
+		.pass{
+			height: 23px;
+			border-radius: 3px;
+			border: 1px solid gray;
+			font-family: cursive;
+		}
+
+		input[type=submit] {
+			height: 23px;
+			border: none;
+			padding-left: 5px;
+			padding-right: 5px;
+			border-radius: 4px;
+			background-color: #0492c2;
+			color: white;
+			cursor: pointer;
+
+		}
+
+		input[type=submit]:hover {
+			background-color: powderblue;
+			transition: 0.8s;
+		}
+
+		.gotpass{
+			float: none;
+			margin-top: 3px;
+			margin-left: 110px;
+			}
+			.gotpass a{
+				color: white;
+				text-decoration: none;
+				font-size: 15px;
+			}
+
+			.content{
+				color: black;
+			margin: 30px;
+			}
+
+		.left-content h3 img{
+			float: left;
+			
+			
+		}
+
+		
+
+		.right-content{
+			float: right;
+			margin: auto;
+		}
+		.right-content h3{
+			font-size: 28px;
+		}
+		.right-content p{
+			margin-top: 15px;
+		}
+		.right-content h5{
+			font-weight: 400;
+		}
+		.name input[type=text]{
+			height: 32px;
+			width: 45%;
+			border-radius: 3px;
+			border: 1px solid gray;
+		}
+		.noname input[type=text]{
+			height: 32px;
+			width: 92%;
+			border-radius: 3px;
+			border: 1px solid gray;
+		}
+		input[type=date]{
+			height: 20px;
+		}
+		
+	</style>
+</head>
+<body>
+	<nav class="header">
+		<h2 class="logo">Love2Code</h2>
+		<form class="login-form">
+			<input class="email" type="email" placeholder=" Email" name="email" required>
+			<input class="pass" type="password" placeholder=" Password" name="password" required>
+			
+			<input type="submit" value="Login"> 
+			<div class="gotpass">
+		<a href="#">forgotten password?</a>
+	</div>
+		</form>
+		
+	</nav>
+
+	<div class="content">
+		<div class="left-content">
+		<h3>Facebook helps you to connect and share with the people in your life.</h3>
+		<br>
+		<img style="width: 40%;" src="img/connect.png"> 
+
+		<form class="right-content">
+			<h3>Create an account</h3>
+			<p><h5>It's free and always will be.</h5></p>
+			<div class="name">
+			<input type="text" placeholder=" Fisrt Name" name="text" required>
+			<input type="text" placeholder=" Last Name" name="text" required>
+		</div>
+			<div class="noname">
+			<p>
+			<input type="text" placeholder=" Mobile number or email address" name="text" required></p>
+			<p>
+			<input type="text" placeholder=" New Password" name="text" required></p>
+			<p>
+			<input type="text" placeholder=" Re-enter Password" name="text" required></p>
+			
+		</div>
+			<p><label>Birthday</label></p>
+			<p>
+				<input type="date" name="Birthday">
+			</p>
+		
+		<p>
+		<input type="radio" name="gender" value="Male"> <label>Male</label>
+		<input type="radio" name="gender" value="Female"> <label>Female</label>
+	</p>
+
+	<p><h5 style="width:400px;">By clicking Creat an account you agree to our Terms and confirm that you have read our Data Policy, including our cookies Use.</h5> </p>
+
+	<br>
+	<p>
+		<input style="background-color: green; padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 23px;" type="submit" value="Create an account">
+	</p>
+		</form>
+	</div>
+</body>
+</html>
